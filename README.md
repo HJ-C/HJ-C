@@ -15,6 +15,8 @@
 
 [![Github Badge](https://img.shields.io/badge/-GITHUB-181717?&logo=github&logoColor=white&style=for-the-badge&link=https://github.com/phj2309)](https://github.com/phj2309)
 
+![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+
 <!--
 **HJ-C/HJ-C** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
