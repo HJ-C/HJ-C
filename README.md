@@ -1,33 +1,49 @@
+<p align="center">
+  <a href="http://lovera.maxam.now.sh/">
+    <img src="https://user-images.githubusercontent.com/25841814/79395484-5081ae80-7fac-11ea-9e27-ac91472e31dd.png" alt="screenshot" width="500">
+  </a>
+  <h3 align="center">📌✨productive-box</h3>
+</p>
 
-### Hi 👋
+<p align="center">
+   <img src="https://img.shields.io/badge/language-typescript-blue?style"/>
+   <img src="https://img.shields.io/github/license/maxam2017/productive-box"/>
+   <img src="https://img.shields.io/github/stars/maxam2017/productive-box"/>
+   <img src="https://img.shields.io/github/forks/maxam2017/productive-box"/>
+</p>
+<p align="center">
+   Are you an early 🐤 or a night 🦉?
+   <br/>
+   When are you most productive during the day?
+   <br/>
+   Let's check out in gist!
+</p>
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=HJ-C&show_icons=true&theme=highcontrast)](https://github.com/anuraghazra/github-readme-stats)
+---
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=HJ-C&langs_count=5&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+> This project is inspired by an awesome pinned-gist project.<br/>Find more in https://github.com/matchai/awesome-pinned-gists
 
+## Overview
+This project uses GitHub graphQL API to get the commit histories and write into the gist by [rest.js](https://github.com/octokit/rest.js#readme)
 
-# Skills
+## Setup
 
-[![JavaScript Badge](https://img.shields.io/badge/JavaScript-424242?&logo=javascript&logoColor=F7DF1E&style=for-the-badge&link=https://developer.mozilla.org/en-US/docs/Web/JavaScript/)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+### Prep work
+1. Create a new public GitHub Gist (https://gist.github.com/)
+1. Create a token with the `gist` and `repo` scope and copy it. (https://github.com/settings/tokens/new)
+   > enable `repo` scope seems **DANGEROUS**<br/>
+   > but this GitHub Action only accesses your commit timestamp in repository you contributed.
 
-[![React Badge](https://img.shields.io/badge/-REACT-61DAFB?&logo=react&logoColor=white&style=for-the-badge&link=https://reactjs.org)](https://reactjs.org/)
-[![ReactNative Badge](https://img.shields.io/badge/-REACT_NATIVE-424242?&logo=react&logoColor=61DAFB&style=for-the-badge&link=https://reactnative.dev)](https://reactnative.dev/)
+### Project setup
 
-[![Github Badge](https://img.shields.io/badge/-GITHUB-181717?&logo=github&logoColor=white&style=for-the-badge&link=https://github.com/phj2309)](https://github.com/phj2309)
+1. Fork this repo
+1. Open the "Actions" tab of your fork and click the "enable" button
+1. Edit the [environment variable](https://github.com/maxam2017/productive-box/blob/master/.github/workflows/schedule.yml#L17-L18) in `.github/workflows/schedule.yml`:
 
-![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+   - **GIST_ID:** The ID portion from your gist url: `https://gist.github.com/maxam2017/`**`9842e074b8ee46aef76fd0d493bae0ed`**.
+   - **TIMEZONE:** The timezone of your location, eg. `Asia/Taipei` for Taiwan, `America/New_York` for America in New York, etc.
 
-<!--
-**HJ-C/HJ-C** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+1. Go to the repo **Settings > Secrets**
+1. Add the following environment variables:
+   - **GH_TOKEN:** The GitHub token generated above.
+1. [Pin the newly created Gist](https://help.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile)
