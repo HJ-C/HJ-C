@@ -1,4 +1,4 @@
-<p align="center"><a href="https://anuraghazra.github.io"><img width="80%" alt="Hello, I'm Choi Hyeon Jun./></a></p>
+<p align="center"><img width="80%" alt="Hello, I'm Choi Hyeon Jun."/></a></p>
 
 <br />
   
@@ -10,6 +10,7 @@
   
 - 💬 Ask me about anything "swch56@naver.com"
 
+<p align="center">
 [![JavaScript Badge](https://img.shields.io/badge/JavaScript-424242?&logo=javascript&logoColor=F7DF1E&style=for-the-badge&link=https://developer.mozilla.org/en-US/docs/Web/JavaScript/)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
@@ -19,7 +20,7 @@
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 [![Github Badge](https://img.shields.io/badge/-GITHUB-181717?&logo=github&logoColor=white&style=for-the-badge&link=https://github.com/phj2309)](https://github.com/phj2309)
-
+</p>
 
 |[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=HJ-C&show_icons=true&theme=highcontrast)](https://github.com/anuraghazra/github-readme-stats)
 
